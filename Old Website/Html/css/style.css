@@ -1,0 +1,1695 @@
+                    /* Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+                    /* Lato Sarif */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+                    /* Open sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+                    /* Bold Lato  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;    
+    z-index: 1;
+}
+
+/* ----------------Start Build Header Section-----------------  */
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+    position:sticky;
+    top: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.74);
+}
+
+.brand a {
+    color: #20CAE1;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 55%;
+    text-decoration: none;
+}
+
+.hul {
+    display: flex;
+    margin-right: 100px;
+}
+
+.hul li {
+    list-style: none;
+    margin-left: 5vw;
+}
+
+.hul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.hul li a:hover,
+.hul li a.homeactive {
+    background-color: #20CAE1;
+}
+
+/* -----------------Complete Header Saction --------------- */
+
+/* -----------------Start Build Home Landing Page--------------- */
+
+
+
+.hbg1 {
+    margin-right: 100px;
+    position: relative;
+    width: 100%;
+    height: calc( 100vh - 100px);
+    background-image: linear-gradient( 90deg, #20CAE1, #4554C3);
+    z-index: 0;
+}
+
+.himg1 {
+    float: right;
+    width: 50%;  
+    margin-right: 100px;
+}
+
+.hheader {
+    width: 40%;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.hheader h1 {
+    color: #20CAE1;
+    font-weight: 800;
+    font-size: 90px;
+    font-family: 'Lato', sans-serif;
+    -webkit-text-stroke: 1px #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hheader h2 {
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Noto Serif', serif;
+    margin-bottom: 2px;
+    margin-top: -12px;
+    font-weight: bolder;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hheader p {
+    font-size: 22px;
+}
+
+.hheader h3 {
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.hheader .hoffer {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border: 2px solid #2237D0;
+    border-radius: 10px;
+    padding: 10px 100px;
+    transition: all 0.5s ease-in-out;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hheader .hoffer:hover {
+    background-color: #2237D0;
+}
+
+.menu-btn i {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+@media (max-width: 940px) {
+
+    .container {
+    height: 80px;
+    }
+
+    .hbg1 {
+    height: calc( 100vh - 80px);
+    }
+
+    .hul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #1b1b1b;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .hul li a:hover,
+    .hul li a.homeactive {
+        color: #20CAE1;
+        background: none;
+    }
+
+    .hul li a {        
+        display: block;
+        width: 100%;
+        margin-left: -100%;
+        font-size: 25px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    #check:checked ~ ul li a{
+        margin-left: 0%;
+      }
+
+    #check:checked ~ .hul{
+        left: 0%;
+    }
+
+
+    .hul li {
+        margin-top: 5vh;
+    }
+
+    .brand a {
+        margin-left: 18%;
+        font-size: 48px;
+    }
+
+    .menu-btn i {
+        display: block;
+        color: white;
+        font-size: 30px;
+        margin-right: 30px;
+    }
+
+    .hul li {
+        margin-left: 0vw;
+    }
+
+    #check:checked ~ .menu-btn i:before {
+        content: "\f00d";
+    }
+
+    /* Complete Manu Bar Saction */
+
+    .hheader {
+        width: 79%;
+        top: 4%;
+    }
+
+    .hheader h1 {
+        font-size: 60px;
+    }
+
+    .hheader h2 {
+        font-size: 25px;
+    }
+
+    .hheader p {
+        font-size: 15px;
+    }
+
+    .hheader h3 {
+        float: right;
+        font-size: 25px;
+        margin-top: 7%;
+        margin-bottom: 6%;
+    }
+
+    .hheader .hoffer {
+        float: right;
+        font-size: 20px;
+        padding: 8px 50px;
+        background-color: #2237D0;
+        clear: both;
+    }
+
+    .hheader .hoffer:hover {
+        background-color: #2237D0;
+    }
+
+    .himg1 {
+        display: block;
+        width: 94%;
+        margin-right: auto;
+        margin-top: 42vh;
+        margin-right: 12px;
+    }
+
+
+    /* ------------------------ Complete Home Landing Page ---------------------------------- */
+
+
+
+
+}
+
+
+.scontainer {
+    padding-top: 4%;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.way h1 {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.way p {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 5%;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+}
+
+.articles a {
+    padding: 8px 60px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    border: 2px solid #2237D0;
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+.articles a:hover {
+    color: white;
+    background-color: #2237D0;
+}   
+
+.articles div {
+    margin-top: 5%;
+}
+
+/* .articles div {
+    border: 2px solid red;
+} */
+
+.aimg1 , .aimg3 {
+    float: left;
+    width: 100%;
+}
+
+.aimg2 {
+    float: right;
+    width: 100%;
+}
+
+.article2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.article1 , .article3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.top h1 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+
+.articles h1 {
+    margin-top: -5%;
+    line-height: 70px;
+}
+
+
+
+
+
+@media (max-width: 940px) {
+
+    .way h1 {
+        margin-top: 20%;
+    }
+    
+    .articles div {
+        /* border: 2px solid red; */
+        margin-top: 12%;
+    }
+
+    .articles h1 {
+        margin-top: 25%;
+        line-height: 55px;
+    }
+
+    .articles p {
+    text-align: justify;
+    }
+
+    .scontainer {
+        width: 90%;
+        display: block;
+    }
+    .scontainer p {
+        font-size: 13px;
+        color: #777;
+    }
+
+    .articles {
+        display: block;
+        float: none;
+    }
+
+    .article1 , .article3 ,.article2 {
+        display: block;
+        top: 2%;
+        position: relative;
+
+    }
+
+    .all {
+        float: none;
+    }
+    
+    img {
+        float: none;
+        width: 100%;
+        margin-bottom: 8%;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .articles a {
+        padding: 8px 60px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        background-color: #2237D0;
+    }
+
+    .articles a:hover {
+        color: white;
+        background: #2237D0;
+    } 
+
+    .contant3 h1 {
+        line-height: 30px;
+        margin-bottom: 6%;
+    }
+
+}
+
+/* --------Complete Home Page Articles-------- */
+
+.Reviews {
+    /* margin-top: 10%; */
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+.Reviews h1 {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.sandeep img {
+    /* padding: 20px; */
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 30px;
+    border-radius: 50%;
+    margin-top: -10px;
+}
+
+.sr {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.sandeep {
+    width: 40%;
+    height: 33vh;
+    margin: auto;
+    padding: 50px;
+    background: rgba(218, 224, 243, 0.6);
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 5%;
+    display: flex;
+    border: 2px solid #6C63FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dhananjay {
+    margin-top: 5%;
+}
+
+.monu {
+    margin-top: 5%;
+}
+
+.sandeep p {
+    margin-top: 2%;
+    color: #565555;
+}
+
+i { 
+    color: #2237D0;
+    margin: 10px 0 0 0 ;
+}
+
+
+@media (max-width: 940px) {
+
+    .Reviews h1 {
+        margin-top: 28%;
+        margin-bottom: 20%;
+        font-size: 40px;
+    }
+
+    .Reviews {
+        width: 100%;
+    }
+
+    .sr {
+        text-align: justify;
+    }
+
+    .sandeep {
+        width: 100%;
+        height: 65vh;
+    }
+
+    .sandeep img {
+        margin-left: -30px;
+        margin-right: 18px;
+    }
+
+    .prajapati {
+        height: auto;
+    }
+
+    .dhananjay {
+        height: auto;
+    }
+
+    .sanjay {
+        height: auto;
+    }
+
+    .monu {
+        height: auto;
+    }
+
+}
+
+/* -------- Complete Sutdent's Reviews Section -------- */
+
+.Groth {
+    width: 80%;
+    margin: auto;
+}
+
+.baner{
+    text-align: center;
+}
+
+.baner h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 5%;
+    margin-top: 8%;
+    font-family: 'Lato', sans-serif;
+}
+
+@media (max-width: 940px)  {
+
+    .baner h1 {
+        font-size: 30px;
+    }
+}
+
+/* ------ Complete Gorw with Ninja ------ */
+
+.footer {
+    background-color: #000000B5;
+    width: 100%;
+}
+/* 
+.footer div {
+    border: 2px solid red;
+} */
+
+.infooter {
+    width: 100%;
+    padding: 20px 5%;
+}
+
+.infooter h1 {
+    color: #20CAE1;
+    font-weight: 800;
+    font-size: 90px;
+    font-family: 'Lato', sans-serif;
+    -webkit-text-stroke: 1px #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.infooter h2{
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Noto Serif', serif;
+    margin-bottom: 2px;
+    margin-top: -12px;
+    font-weight: bolder;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.infooter .fimg {
+    float: right;
+    width: 29%;
+    right: 0;
+    margin-top: -8%;
+}
+
+.fimg img {
+    width: 99%;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-around;
+    width: 22%;
+    font-size: 40px;
+    margin-top: 3%;
+    position: relative;
+    z-index: 0;
+}
+
+.icon i {
+    color: white;
+}
+
+.copy {
+    width: 22%;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 7%;
+}
+
+.copy i {
+    color: white;
+}
+
+@media (max-width: 940px) {
+
+    .infooter h1 {
+        margin-top: 5%;
+        font-size: 70px;
+    }
+
+    .infooter h2 {
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        font-size: 40px;
+        margin-top: 6%;
+    }
+
+    .copy {
+        width: 100%;
+        text-align: center;
+        margin-left: 0%;
+        margin-top: 20%;
+    }
+
+
+    .infooter .fimg {
+        float: none;
+        width: 100%;
+        margin-top: 10%;
+    }
+
+}
+
+/* -------- Complete Footer Section -------- */
+
+
+
+/* --------------------------------------------------- Start Courses Page -------------------------------------------------------- */
+
+
+
+.coursesimg {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: #564FCCA3;
+    min-height: 300px;
+}
+
+.coursesimg img {
+    width: 40%;
+    margin: 0% 0 1% 0px;
+    min-width: 330px;
+}
+
+@media (max-width: 940px) {
+
+    .coursesimg img {
+
+        margin: 7% 0 10% 0px;
+
+    }
+}
+
+
+/* --------------- Complete Courses Main Img ------------------------- */
+
+
+.Courses {
+    width: 80%;
+    margin: auto;
+}
+
+.coursesheader {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.coursesheader h1 {
+    font-size: 100px;
+    color: #00E0FF;
+    font-family: 'Lato', sans-serif;
+    -webkit-text-stroke: 1px #000000;
+    margin-top: 4%;
+    font-weight: 800;
+
+}
+
+.coursesheader img {
+    width: 5%;
+    margin-top: 5%;
+}
+
+.coursecontant {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+    margin: 10%;
+    position: relative;
+    z-index: 0;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box {
+    font-family: 'Lato', sans-serif;
+    margin: 10px;
+    background-color: rgba(112, 97, 205, 0.27);
+    border-radius: 10px;
+    padding: 13px 10px;
+    width: 31%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ch2 {
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.box h2 {
+    border-radius: 5px;
+    font-weight: bolder;
+    padding: 10px;
+    font-size: 29px;
+    border: 2px solid #2237D0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.box a {
+    text-decoration: none;
+    padding: 11px 72px;
+    color: #2237D0;
+}
+
+.box a:hover {
+    color: white;
+}
+
+.box h2:hover {
+    background-color: #2237D0;
+    color: white;
+}
+
+@media (max-width: 940px) {
+
+    .Courses {
+        width: 100%;
+    }
+
+    .coursesheader {
+        width: 100%;
+    }
+
+    .coursesheader h1 {
+        font-size: 55px;
+        margin-top: 17%;
+    }
+
+    .coursesheader img {
+        width: 14%;
+        margin-top: 16%;
+    }
+
+    .coursecontant {
+        width: 100%;
+        display: block;
+        margin: auto;
+        text-align: center;
+        margin: 0%;
+        position: relative;
+        z-index: 0;
+    }
+
+    .box {
+        font-family: 'Lato', sans-serif;
+        margin: 10% 5%;
+        background-color: rgba(112, 97, 205, 0.27);
+        border-radius: 10px;
+        padding: 13px 10px;
+        width: 90%;
+    }
+
+    .box h2 {
+        color: white;
+        background-color: #2237D0;
+    }
+
+    .box h2:hover {
+        background: #2237D0;
+        color: none;
+    }
+
+    .box a {
+        color: white;
+    }
+
+}
+
+
+/* ----------------- Complete courses page -----------------  */
+
+
+.bimg {
+    width: 30%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.bimg img {
+    width: 100%;
+}
+
+@media (max-width: 940px) {
+
+    .bimg {
+        width: 95%;
+    }
+}
+
+/* ----- Complete Basic Details Img ---- */
+
+.basicdelails {
+
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+
+}
+/* 
+.basicdelails div {
+    border: 2px solid red;
+} */
+
+.basicdelails h1 {
+
+    font-size: 70px;
+    color: #564FCC;
+    font-weight: bolder;
+}
+
+.basicdelails .bicon {
+
+    font-size: 100px;
+    margin-bottom: 5%;
+
+}
+
+.basicalldelails {
+    width: 100%;
+    display: flex;
+    position: relative;
+    z-index: 0;
+    margin-top: 10%;
+}
+
+.basicbar {
+    width: 30%;
+    background: rgba(112, 97, 205, 0.27);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20%;
+    box-shadow: 0px 0px 5px #000000;
+    height: 463px;
+    border: 2px solid #2237D0;
+}
+
+.basicbar .bbar {
+    float: right;
+}
+
+.basicbar ul {
+    padding: 0 11px;
+}
+
+.basicbar li {
+
+    margin: 45px 0; 
+    list-style: none;
+    text-align: left;
+
+}
+
+.basicbar a {
+    display: block;
+    padding: 10px 0;
+    border: 2px solid #2237D0;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.basicprice {
+    color: white;
+    background-color: #2237D0;
+}
+
+.basicenrolnow {
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.basicenrolnow:hover {
+    color: white;
+    background-color: #2237D0;
+}
+
+/* ----- Complete Basic nav ------ */
+
+.basiccontant {
+    width: 70%;
+    margin: 20px;
+
+}
+
+.basiccontant h1 {
+    margin-bottom: 5%;
+    font-size: 40px;
+}
+
+.basiccontant i {
+    margin-right: 10px;
+    color: #D5CEFF;
+}
+
+.basiccontant p {
+    text-align: left;
+}
+
+.basiccontant ul li {
+    list-style: none;
+    margin-left: 10%;
+    padding: 20px 0;
+    font-size: 25px;
+}
+
+.lastdetails {
+    margin-bottom: 5%;
+}
+
+@media (max-width: 940px) {
+
+    .basicdelails {
+        width: 100%;
+    }
+
+    .basicdelails h1 {
+        font-size: 35px;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    
+    .basicdelails .bicon {
+        font-size: 50px;
+        margin-bottom: 25%;
+    
+    }
+
+    .basicalldelails {
+        display: block;
+    }
+
+    .basicbar {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20%;
+    }
+
+    .basiccontant p {
+        text-align: center;
+    }
+
+    .basicenrolnow {
+        color: white;
+        background: #2237D0;
+    }
+    
+    .basiccontant {
+        width: 90%;
+        margin: auto;
+    
+    }
+
+    .basiccontant ul li {
+        margin-left: 1%;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+
+    .basiccontant h1 {
+        font-size: 30px;
+    }
+
+    .box a {
+        padding: 11px 21px;
+    }
+
+}
+
+/* ------------------ Complete Basic Course Details Page ------------------ */
+
+/* -------- Start Build Enrol Form ------ */
+
+.enrol-now {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.Form-section {
+    width: 40%;
+    margin: 10% auto;
+    padding: 20px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(112, 97, 205, 0.27);
+    /* border: 2px solid red; */
+    border-radius: 5px;
+}
+
+.enrol-header {
+    text-align: center;
+}
+
+.enrol-header h1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10%;
+}
+
+.details {
+    width: 48%;
+    margin: 1%;
+    position: relative;
+    z-index: 0;
+
+}
+#box1, #box2, #box3, textarea {
+    width: 100%;
+    margin: 10px 0;
+    border: 2px solid #2237D0;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px #777;
+    font-size: 15px;
+    padding: 10px 12px;
+}
+
+#box3 option {
+    margin: 20px;
+}
+
+textarea {
+    height: 44px;
+    resize: none;
+    font-size: 15px;
+}
+
+.button {
+    width: 204%;
+    background-color: #2237D0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 25px;
+    border: 2px solid #2237D0;
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: 800;
+}
+
+@media (max-width: 940px) {
+
+    .Form-section {
+        width: 100%;
+
+    }
+
+    .details {
+        width: 100%;
+    }
+    
+    .button {
+        width: 100%;
+    }
+
+    .enrol-header h1 {
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+}
+
+
+/* -------- Complete Enrol Form Page --------  */
+
+
+/* -------- Start Build Blog1 --------- */
+
+
+.blog1 {
+    width: 100%;
+    margin: 5% auto 10%;
+}
+
+.blog1container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.blog1 h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 4%;
+}
+
+.blog1 img {
+    width: 60%;
+}
+
+.table-rows {
+    width: 50%;
+    margin: auto;
+}
+
+.table-rows p {
+    text-align: justify;
+    margin: 5% 0 3%;
+}
+
+table, thead, tbody, tr, th, td  {
+    border: 2px solid #777;
+    font-size: 25px;
+}
+
+@media (max-width: 940px) {
+
+    .table-rows {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    table, thead, tbody, tr, th, td  {
+        border: 2px solid #777;
+        font-size: 16px;
+    }
+    
+    .blog1 img {
+        width: 90%;
+    }
+
+    .blog1container {
+        width: 96%;
+    }
+
+    .blog1 h1 {
+        font-size: 26px;
+    }
+
+    .blog1 {
+        padding: 2px;
+        margin: 5% auto 20%;
+    }
+
+}
+
+/* -------- Complete Build Blog1 --------- */
+
+
+/* -------- Start Build Blog2 --------- */
+
+
+.blog2 {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin: 5% auto 10%;    
+}
+
+.blog2 img {
+    width: 60%;
+    margin-bottom: 5%;
+}
+
+.blog2-cont {
+    width: 50%;
+    margin: auto;
+}
+
+.blog2-cont p {
+    text-align: justify;
+}
+
+.blog2 h1 {
+    font-size: 40px;
+    margin-bottom: 4%;
+}
+
+@media (max-width: 940px) {
+
+    .blog2 {
+        width: 96%;
+    }
+
+    .blog2 img {
+        width: 90%;
+    }
+
+    .blog2-cont {
+        width: 100%;
+    }
+
+    .blog2 h1 {
+        font-size: 26px;
+        margin-bottom: 4%;
+    }
+    
+    .blog2-cont p {
+        padding: 0 21px;
+        font-size: 15px;
+    }
+
+}
+
+
+/* -------- Complete Build Blog2 --------- */
+
+
+/* -------- Start Build Blog Page --------- */
+
+
+.blogpage {
+    width: 100%;
+    text-align: center;
+}
+
+.blogpage h1 {
+    padding: 2% auto;
+    margin-top: 5%;
+    font-size: 100px;
+    font-weight: 800;
+    color: #00E0FF;
+    font-family: 'Lato', sans-serif;
+    -webkit-text-stroke: 1px #000000;
+}
+
+.blogpage i {
+    margin: 5% auto 5%;
+    font-size: 100px;
+    -webkit-text-stroke: 1px #000000;
+    color: #00E0FF;
+}
+
+.blogimg {
+    width: 100%;
+    height: 40%;
+    background-color: #564FCCA3;
+}
+
+.blogpage img {
+    height: 50%;
+    padding: 1%;
+}
+
+.blog {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5% auto 10%; 
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+.blog div {
+    width: 30%;
+    height: 500px;
+    margin: 0 auto 5%;
+    border: 2px solid #2237D0;
+    border-radius: 5px;
+    background: rgba(112, 97, 205, 0.27);
+    padding: 20px 10px 10px;
+    box-shadow: 0 0 10px 1px #3647ca;
+}
+
+.blog div p a {
+    text-decoration: none;
+    color: black;
+}
+
+.blog div img {
+    width: 90%;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.blog div .read {
+    padding: 3% 38%;
+    text-decoration: none;
+    color: #2237D0;
+    border: 2px solid #2237D0;
+    border-radius: 5px;
+    position: relative;
+    top: 23px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.blog div .read:hover {
+    color: white;
+    background: #2237D0;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 940px) {
+
+    .blogpage h1 {
+        margin-top: 10%;
+        font-size: 48px;
+        font-weight: 800;
+    }
+    
+    .blogpage i {
+        margin: 15% auto 24%;
+        font-size: 70px;
+    }
+    
+    .blogpage img {
+        height: 50%;
+        margin: 2% auto 1%;
+        padding: 7%;
+    }
+
+    .blog {
+        width: 90%;
+        display: block;
+    }
+
+    .blog div {
+        width: 100%;
+        height: 475px;
+    }
+
+    .blog div img {
+        width: 95%;
+    }
+
+    .blog div .read {
+        padding: 4% 30%;
+        color: white;
+        background-color: #2237D0;
+    }
+
+}
+
+/* -------- Complete Build Blog Page --------- */
+
+
+/* -------- Start Build About Page --------- */
+
+.about {
+    width: 100%;
+    text-align: center;
+}
+
+.about img {
+    margin: 2% auto;
+    width: 37%;
+}
+
+.about-img {
+    width: 100%;
+    background-color: #564FCCA3;
+
+}
+
+.about h1 {
+    padding: 2% auto;
+    margin-top: 5%;
+    font-size: 100px;
+    font-weight: 800;
+    color: #00E0FF;
+    font-family: 'Lato', sans-serif;
+    -webkit-text-stroke: 1px #000000;
+}
+
+.about i {
+    margin: 3% auto 7%;
+    font-size: 100px;
+    -webkit-text-stroke: 1px #000000;
+    color: #00E0FF;
+}
+
+.about-details {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.about-details img {
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+.about-p {
+    width: 45%;
+    margin: auto;
+    text-align: justify;
+}
+
+@media (max-width: 940px) {
+
+    .about img {
+        margin: 10% auto;
+        width: 96%;
+    }
+
+    .about h1 {
+        margin: 15% auto 20%;
+        font-size: 48px;
+    }
+
+    .about i  {
+        font-size: 70px;
+        margin: 0 auto 25%;
+    }
+
+    .about-p {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .about-details img {
+        width: 90%;
+    }
+
+}
+
+/* -------- Complete Build About Page --------- */
+
+
+
+
+/* -------- Start Build Contact Page --------- */
+
+
+
+.contact {
+    width: 100%;
+    text-align: center;
+}
+
+.contact img {
+    margin: 2% auto;
+    width: 26%;
+}
+
+.contact-img {
+    width: 100%;
+    background-color: #564FCCA3;
+
+}
+
+.contact h1 {
+    padding: 2% auto;
+    margin-top: 5%;
+    font-size: 100px;
+    font-weight: 800;
+    color: #00E0FF;
+    font-family: 'Lato', sans-serif;
+    -webkit-text-stroke: 1px #000000;
+}
+
+.contact i {
+    margin: 3% auto 4%;
+    font-size: 100px;
+    -webkit-text-stroke: 1px #000000;
+    color: #00E0FF;
+}
+
+.contact-form {
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto 10%;
+}
+
+.con-details {
+    font-size: 20px;
+    margin: 2% auto;
+}
+
+.con-details input {
+    width: 100%;
+    border: 1px solid #777;
+    margin: 10px auto;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.con-details textarea {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100px;
+    border: 1px solid #777;
+    margin: 10px auto;
+    padding: 8px 10px;
+    font-size: 17px;
+    box-shadow: none;
+}
+
+.con-details input:focus,
+.con-details textarea:focus {
+    border: 2px solid #2237D0;
+}
+
+.con-submit {
+    width: 30%;
+    height: 50px;
+    font-size: 25px;
+    background-color: #2237D0;
+    border: 1px;
+    font-weight: 800;
+    color: white;
+    border-radius: 5px;
+}
+
+.con-submit:hover{
+    background-color: #2237D0;
+}
+
+@media (max-width: 940px) {
+
+    .contact img {
+        margin: 10% auto;
+        width: 96%;
+    }
+
+    .contact h1 {
+        margin: 15% auto 20%;
+        font-size: 48px;
+    }
+
+    .contact i  {
+        font-size: 70px;
+        margin: 0 auto 25%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+    
+    .con-submit {
+        width: 100%;
+    }
+
+}
+
+/* -------- Complete Build Contact Page --------- */
+
+
+/* -------- Start Build Thanx Page --------- */
+
+.thanx-container {
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(112, 97, 205, 0.27);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.thanx-header {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.thanx-header h1 {
+    font-size: 70px;
+    color: #4dac4db3;
+    transition: 1s ease-in-out;
+}
+
+.thanx-btn {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: -5%;
+}
+
+.thanx-btn a {
+    text-decoration: none;
+    font-size: 50px;
+    padding: 4px 50px;
+    color: black;
+    border: 2px solid #2237D0;
+    border-radius: 5px;
+    font-weight: 800;
+    transition: all 0.3s ease-in-out;
+}
+
+.thanx-btn a:hover {
+    color: white;
+    background-color: #2237D0;
+    
+}
+
+@media (max-width: 940px) {
+
+    .thanx-header {
+        width: 90%;
+    }
+
+    .thanx-header h1 {
+        font-size: 30px;
+    }
+
+    .thanx-btn {
+        margin-top: -20%;
+        width: 100%;
+    }
+
+    .thanx-btn a {
+        font-size: 20px;
+        padding: 10px 100px;
+        color: white;
+        background-color: #2237D0;
+    }
+
+}
+
+/* -------- Complete Build Thanx Page --------- */
