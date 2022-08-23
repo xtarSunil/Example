@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body{
+            background-image:linear-gradient(orange green);
+        }
+
+        #Container{
+            background-color: bisque;
+            width: 650px;
+            margin-top: 100px;
+            margin: auto;
+            padding: 25px 30px 35px 30px;
+            border-radius: 5px;
+        }
+
+        h2{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: left;
+            font-size: 30px;
+        }
+        h3{
+            
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        h4{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: left;
+            font-size: 25px;
+
+        }
+
+        input{
+            width: 150px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="Container">
+        <h2>All About you</h2>
+        <h3>Don't be shy , let's work together.Please Describe your comapny
+            briefty & and illustrate your activities for our better understanding.
+        </h3>
+        <h4>Basic info</h4>
+        <hr>
+        <form>
+            <div>
+                <i class="fa fa-user"></i>
+                <input type="text" placeholder="Contact Name">
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <input type="email" placeholder="Conatct Email">
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <input type="number" placeholder="Phone">
+            </div>
+
+            <div>
+                <i class="fa fa-building"></i>
+                <input type="text" placeholder="Company Name">
+            </div>
+
+            <div>
+                <i class="fa fa-map"></i>
+                <input type="text" placeholder="Address">
+            </div>
+
+            <div>
+                <i class="fa-solid fa-industry"></i>
+                <select>
+                    <option>Industry</option>
+                    <option>Company</option>
+                    <option>Bank</option>
+                </select>
+            </div>
+
+            
+            <div>
+                <i class="fa-solid fa-earth-asia"></i>
+                <input type="text" placeholder="http.//">
+            </div>
+
+            <h5>Details info</h5>
+            <hr>
+
+        <div>
+            <i class="fa fa-layer-group"></i> 
+            what sets you aparts from others ?  <br>
+            <input type="checkbox"> lower prices
+            <input type="checkbox"> Better support
+            <input type="checkbox"> faster
+            <input type="checkbox">fast delivery
+            <input type="checkbox">fancy office
+            <input type="checkbox">slick approach
+            
+
+        </div> <br>
+        <div>
+            <i class="fa fa-users"></i>
+            How many employers does your campany have?
+            <input type="checkbox"> up to 5
+            <input type="checkbox"> up to 50
+            <input type="checkbox"> up to 100
+            <input type="checkbox"> up to 500
+            <input type="checkbox"> above 5
+            
+        </div>
+
+        <textarea cols="30" rows="10"> about your comapny</textarea> <br>
+
+        <input type="submit" value="next">
+
+
+
+        </form>
+    </div>
+    
+</body>
+</html>
