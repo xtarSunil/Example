@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img src="flaticon.png" alt="">
+            <ul>
+                <li>Home</li>
+                <li>Shop</li>
+                <li>Blog</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="Homepage"  >
+            <h2>Virat Kohli</h2>
+        <p>Virat Kohli born 5 November[3] 1988) is an Indian international cricketer and former captain of the India national cricket team. He plays for Delhi in domestic cricket and Royal Challengers Bangalore in the Indian Premier League as a right-handed batsman. He is often considered one of the best batsmen of his era and is widely regarded as one of the greatest all-format batsmen of all time[4] Between 2013 and 2022, he captained the India cricket team in 213 matches across all three formats. With 40 wins out of 68 matches, Kohli is one of the most successful Indian Test captains.[5][6]
+
+            Kohli made his Test debut in 2011.[7] He reached the number one spot in the ICC rankings for ODI batsmen for the first time in 2013.[8] He has won Man of the Tournament twice at the ICC World Twenty20 (in 2014 and 2016). He also holds the world record of being the fastest to 23,000 international runs.[9]
+            
+            Kohli has been the recipient of many awards– most notably the Sir Garfield Sobers Trophy (ICC Men's Cricketer of the Decade): 2011–2020; Sir Garfield Sobers Trophy (ICC Cricketer of the Year) in 2017 and 2018; ICC Test Player of the Year (2018); ICC ODI Player of the Year (2012, 2017, 2018) and Wisden Leading Cricketer in the World (2016, 2017 and 2018).[10] At the national level, he was awarded the Arjuna Award in 2013, the Padma Shri under the sports category in 2017[11] and the Rajiv Gandhi Khel Ratna award, the highest sporting honour in India, in 2018.[12]</p>
+        </div>
+
+        <div class="Homeimg" >
+            <img src="virat.png" alt="">
+        </div>
+    </main>
+    <hr>
+    
+</body>
+</html>
